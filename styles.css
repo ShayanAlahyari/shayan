@@ -6,10 +6,11 @@ body {
     color: #333;
     line-height: 1.6;
     margin: 0;
-    padding-top: 80px; /* Adjust padding to prevent content overlap */
+    padding-top: 100px; /* Adjusted padding to avoid content overlap */
 }
 
 header {
+    height: 80px; /* Set specific height */
     background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     color: white;
     padding: 10px 0;
