@@ -6,17 +6,13 @@ body {
     color: #333;
     line-height: 1.6;
     margin: 0;
-    padding-top: 80px; /* Add padding to the top to account for the fixed header */
 }
 
 header {
     background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     color: white;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
-    top: 0;
-    z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -67,6 +63,7 @@ header nav ul li a:hover {
 .section-padding {
     padding: 60px 20px;
     text-align: center;
+    margin-top: 20px;
 }
 
 section h2 {
@@ -146,9 +143,6 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
     font-size: 0.9em;
 }
 
