@@ -1,19 +1,13 @@
-/* Reset some basic elements */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap";
 
-/* Use a modern, clean font */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
+    margin: 0;
 }
 
-/* Style the header */
 header {
     background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     color: white;
@@ -29,6 +23,8 @@ header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 header nav ul li {
@@ -68,20 +64,18 @@ header nav ul li a:hover {
     to { opacity: 1; }
 }
 
-/* Style each section */
-section {
+.section-padding {
     padding: 60px 20px;
-    margin-top: 30px;
+    text-align: center;
+    margin-top: 80px;
 }
 
 section h2 {
     font-size: 2em;
     margin-bottom: 20px;
     color: #333;
-    text-align: center;
 }
 
-/* Style the projects */
 .project {
     background: white;
     padding: 20px;
@@ -118,7 +112,6 @@ section h2 {
     color: #ffeb3b;
 }
 
-/* Style the resume link */
 #resume a {
     display: inline-block;
     padding: 10px 20px;
@@ -133,7 +126,6 @@ section h2 {
     background: #2575fc;
 }
 
-/* Style the contact section */
 #contact p {
     font-size: 1em;
     margin-bottom: 10px;
@@ -150,7 +142,6 @@ section h2 {
     color: #ffeb3b;
 }
 
-/* Style the footer */
 footer {
     background: #333;
     color: white;
@@ -162,193 +153,6 @@ footer {
     font-size: 0.9em;
 }
 
-/* Media queries for responsiveness */
-@media (min-width: 768px) {
-    .header-content h1 {
-        font-size: 3em;
-    }
-
-    .header-content p {
-        font-size: 1.5em;
-    }
-
-    section h2 {
-        font-size: 2.5em;
-    }
-
-    .project h3 {
-        font-size: 1.75em;
-    }
-
-    .project p {
-        font-size: 1.1em;
-    }
-}
-/* Reset some basic elements */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Use a modern, clean font */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Style the header */
-header {
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    color: white;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-    transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #ffeb3b;
-}
-
-.header-content {
-    text-align: center;
-    padding: 60px 20px;
-    margin-top: 50px;
-}
-
-.header-content h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    animation: fadeIn 1s ease-in;
-}
-
-.header-content p {
-    font-size: 1.2em;
-    animation: fadeIn 1.5s ease-in;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Style each section */
-section {
-    padding: 60px 20px;
-    margin-top: 30px;
-}
-
-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #333;
-    text-align: center;
-}
-
-/* Style the projects */
-.project {
-    background: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.project h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #2575fc;
-}
-
-.project p {
-    font-size: 1em;
-    margin-bottom: 15px;
-}
-
-.project a {
-    color: #6a11cb;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.project a:hover {
-    color: #ffeb3b;
-}
-
-/* Style the resume link */
-#resume a {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #6a11cb;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-#resume a:hover {
-    background: #2575fc;
-}
-
-/* Style the contact section */
-#contact p {
-    font-size: 1em;
-    margin-bottom: 10px;
-}
-
-#contact a {
-    color: #6a11cb;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-#contact a:hover {
-    color: #ffeb3b;
-}
-
-/* Style the footer */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-size: 0.9em;
-}
-
-/* Media queries for responsiveness */
 @media (min-width: 768px) {
     .header-content h1 {
         font-size: 3em;
