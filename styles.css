@@ -6,6 +6,7 @@ body {
     color: #333;
     line-height: 1.6;
     margin: 0;
+    padding-top: 80px; /* Add padding to the top to account for the fixed header */
 }
 
 header {
@@ -44,8 +45,7 @@ header nav ul li a:hover {
 
 .header-content {
     text-align: center;
-    padding: 60px 20px;
-    margin-top: 50px;
+    padding: 20px 0;
 }
 
 .header-content h1 {
@@ -67,7 +67,6 @@ header nav ul li a:hover {
 .section-padding {
     padding: 60px 20px;
     text-align: center;
-    margin-top: 80px;
 }
 
 section h2 {
