@@ -1,213 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shayan Alahyari's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXRN+C5pyrpI5sGfjwSmk5y6q4zT28szp3K5TIb2lvV1HBWBl1lk1yY6XZ/5Mk6eozrQKx5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shayan Alahyari's Portfolio</title>
+
+  <!-- Link to the updated CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Import Poppins Font (redundant if in CSS, but safe to keep) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTTXRN+C5pyrpI5sGfjwSmk5y6q4zT28szp3K5TIb2lvV1HBWBl1lk1yY6XZ/5Mk6eozrQKx5Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#about">Shayan Alahyari</a>
-            </div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- HEADER & NAV -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="#about">Shayan Alahyari</a>
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="about" class="section-padding">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hi, I'm Shayan Alahyari, a Master of Science student at Western University in London, Canada. I study Computer Science with a focus on Machine Learning. My background is in Electrical Engineering and Artificial Intelligence. I work under the supervision of Professor Mike Domaratzki.</p>
-            <p>I love solving problems with technology. My main interest is in making machines learn from data to make better decisions. I have worked on several research projects and personal projects that involve processing large amounts of data and building smart models.</p>
-            <p>In my free time, I enjoy coding, learning new technologies, and helping others understand computer science. I also like to stay updated with the latest trends in machine learning and artificial intelligence.</p>
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <h2><span>About Me</span></h2>
+      <p>
+        Hi, I'm Shayan Alahyari, a Master of Science student at Western University
+        in London, Canada. I study Computer Science with a focus on Machine
+        Learning. My background is in Electrical Engineering and Artificial
+        Intelligence. I work under the supervision of Professor Mike Domaratzki.
+      </p>
+      <p>
+        I love solving problems with technology. My main interest is in making
+        machines learn from data to make better decisions. I have worked on
+        several research projects and personal projects that involve processing
+        large amounts of data and building smart models.
+      </p>
+      <p>
+        In my free time, I enjoy coding, learning new technologies, and helping
+        others understand computer science. I also like to stay updated with the
+        latest trends in machine learning and artificial intelligence.
+      </p>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education" class="section-padding">
+    <div class="container">
+      <h2><span>Education</span></h2>
+
+      <div class="education-item">
+        <h3>Western University</h3>
+        <p>
+          <strong>Master of Science in Computer Science</strong> | 2024 – 2026 | London, Canada
+        </p>
+        <ul>
+          <li><strong>Thesis:</strong> Enhancing Data Augmentation Techniques in Deep Learning</li>
+          <li><strong>Supervisor:</strong> Prof. Mike Domaratzki</li>
+          <li><strong>GPA:</strong> 4.0/4.0</li>
+        </ul>
+      </div>
+
+      <div class="education-item">
+        <h3>Western University</h3>
+        <p>
+          <strong>Bachelor of Science in Computer Science</strong> | 2022 – 2024 | London, Canada
+        </p>
+        <ul>
+          <li><strong>Awards:</strong> NSERC Student Research Award</li>
+          <li><strong>GPA:</strong> 4.0/4.0</li>
+        </ul>
+      </div>
+
+      <div class="education-item">
+        <h3>Shiraz University</h3>
+        <p><strong>Bachelor of Engineering in Electrical Engineering</strong> | 2012 – 2016 | Shiraz, Iran</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH SECTION -->
+  <section id="research" class="section-padding">
+    <div class="container">
+      <h2><span>Research Projects</span></h2>
+      <div class="project">
+        <h3>Advanced Data Engineering for Machine Learning in Genomic Selection</h3>
+        <p><strong>Duration:</strong> May 2024 – September 2024</p>
+        <p><strong>Funding:</strong> NSERC Student Research Award of $10,000</p>
+        <p><strong>Supervisor:</strong> Professor Mike Domaratzki, Western University</p>
+        <p>
+          <strong>Repository:</strong>
+          <a
+            href="https://github.com/ShayanAlahyari/Advanced-Data-Engineering-forMachine-Learning-in-Genomic-Selection"
+            target="_blank"
+            >GitHub Link</a
+          >
+        </p>
+        <ul>
+          <li>Wrote shell and Python scripts to handle large genomic datasets for machine learning.</li>
+          <li>Managed over 2TB of genomic data, working with 500+ BAM files across 20+ chromosomes.</li>
+          <li>Performed tasks like BAM indexing, filtering, base recalibration, variant calling, and SNP filtering.</li>
+          <li>Made data processing 30% faster by improving parallel computing on servers.</li>
+          <li>Used tools like GATK, Miniconda, samtools, parallel, Java, and Python.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONAL PROJECTS SECTION -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <h2><span>Personal Projects</span></h2>
+      <div class="project">
+        <h3>Histopathologic Cancer Detection Project</h3>
+        <p><strong>Duration:</strong> 2024 – 2025</p>
+        <p>
+          <strong>Repository:</strong>
+          <a
+            href="https://github.com/ShayanAlahyari/Histopathologic_Cancer_Detection"
+            target="_blank"
+            >GitHub Link</a
+          >
+        </p>
+        <ul>
+          <li>Built and trained a deep Convolutional Neural Network (CNN) using PyTorch to classify cancer.</li>
+          <li>Used GAN-generated synthetic images to make the model more accurate and reliable.</li>
+          <li>Applied advanced data augmentation techniques and used GPU acceleration to speed up training.</li>
+          <li>Achieved a high validation AUC of 0.989, showing the model works well for cancer detection.</li>
+        </ul>
+      </div>
+      <!-- Add more personal projects here if needed -->
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="section-padding">
+    <div class="container">
+      <h2><span>Professional Experience</span></h2>
+      <div class="experience-item">
+        <h3>Financial Advisor</h3>
+        <p><strong>CURO Financial Technologies Corp</strong> | July 2019 – November 2022 | London, Canada</p>
+        <ul>
+          <li>Built strong relationships with clients, achieving over 95% satisfaction.</li>
+          <li>Analyzed and cleaned financial data to help clients make better financial decisions by 20%.</li>
+          <li>Created easy-to-use financial guides, which increased client understanding and tool usage by 30%.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Electrical Engineer</h3>
+        <p><strong>Gishay Negar</strong> | June 2016 – July 2018 | Shiraz, Iran</p>
+        <ul>
+          <li>Designed electronic circuits and systems for over 20 applications, improving system efficiency by 30%.</li>
+          <li>Increased circuit reliability by 25% and reduced energy use by 20% using simulation tools.</li>
+          <li>Developed testing protocols and conducted over 100 tests, ensuring 95% compliance with performance standards.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEACHING SECTION -->
+  <section id="teaching" class="section-padding">
+    <div class="container">
+      <h2><span>Teaching Experience</span></h2>
+      <div class="teaching-item">
+        <h3>Graduate Teaching Assistant</h3>
+        <p><strong>Western University, Faculty of Science</strong> | September 2024 – Present</p>
+        <ul>
+          <li>Assisted in teaching "Coding Essentials: Introduction to Python" (CS 1026).</li>
+          <li>Supported students one-on-one through email, tutorials, and office hours.</li>
+          <li>Helped debug Python code and taught core programming concepts to improve students' problem-solving skills.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section-padding">
+    <div class="container">
+      <h2><span>Technical Skills</span></h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>SQL</li>
+            <li>Bash Shell</li>
+          </ul>
         </div>
-    </section>
-
-    <section id="education" class="section-padding">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Western University</h3>
-                <p><strong>Master of Science in Computer Science</strong> | 2024 – 2026 | London, Canada</p>
-                <ul>
-                    <li><strong>Thesis:</strong> Enhancing Data Augmentation Techniques in Deep Learning</li>
-                    <li><strong>Supervisor:</strong> Prof. Mike Domaratzki</li>
-                    <li><strong>GPA:</strong> 4.0/4.0</li>
-                </ul>
-            </div>
-            <div class="education-item">
-                <h3>Western University</h3>
-                <p><strong>Bachelor of Science in Computer Science</strong> | 2022 – 2024 | London, Canada</p>
-                <ul>
-                    <li><strong>Awards:</strong> NSERC Student Research Award</li>
-                    <li><strong>GPA:</strong> 4.0/4.0</li>
-                </ul>
-            </div>
-            <div class="education-item">
-                <h3>Shiraz University</h3>
-                <p><strong>Bachelor of Engineering in Electrical Engineering</strong> | 2012 – 2016 | Shiraz, Iran</p>
-            </div>
+        <div class="skill-category">
+          <h3>Tools</h3>
+          <ul>
+            <li>Git</li>
+            <li>Docker</li>
+            <li>AWS</li>
+            <li>MySQL</li>
+            <li>.NET</li>
+            <li>ASP.NET</li>
+            <li>Agile</li>
+          </ul>
         </div>
-    </section>
-
-    <section id="research" class="section-padding">
-        <div class="container">
-            <h2>Research Projects</h2>
-            <div class="project">
-                <h3>Advanced Data Engineering for Machine Learning in Genomic Selection</h3>
-                <p><strong>Duration:</strong> May 2024 – September 2024</p>
-                <p><strong>Funding:</strong> NSERC Student Research Award of $10,000</p>
-                <p><strong>Supervisor:</strong> Professor Mike Domaratzki, Western University</p>
-                <p><strong>Repository:</strong> <a href="https://github.com/ShayanAlahyari/Advanced-Data-Engineering-forMachine-Learning-in-Genomic-Selection" target="_blank">GitHub Link</a></p>
-                <ul>
-                    <li>Wrote shell and Python scripts to handle large genomic datasets for machine learning.</li>
-                    <li>Managed over 2TB of genomic data, working with 500+ BAM files across 20+ chromosomes.</li>
-                    <li>Performed tasks like BAM indexing, filtering, base recalibration, variant calling, and SNP filtering.</li>
-                    <li>Made data processing 30% faster by improving parallel computing on servers.</li>
-                    <li>Used tools like GATK, Miniconda, samtools, parallel, Java, and Python.</li>
-                </ul>
-            </div>
+        <div class="skill-category">
+          <h3>Libraries</h3>
+          <ul>
+            <li>TensorFlow</li>
+            <li>PyTorch</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Django</li>
+            <li>Bootstrap</li>
+            <li>RESTful APIs</li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="projects" class="section-padding">
-        <div class="container">
-            <h2>Personal Projects</h2>
-            <div class="project">
-                <h3>Histopathologic Cancer Detection Project</h3>
-                <p><strong>Duration:</strong> 2024 – 2025</p>
-                <p><strong>Repository:</strong> <a href="https://github.com/ShayanAlahyari/Histopathologic_Cancer_Detection" target="_blank">GitHub Link</a></p>
-                <ul>
-                    <li>Built and trained a deep Convolutional Neural Network (CNN) using PyTorch to classify cancer.</li>
-                    <li>Used GAN-generated synthetic images to make the model more accurate and reliable.</li>
-                    <li>Applied advanced data augmentation techniques and used GPU acceleration to speed up training.</li>
-                    <li>Achieved a high validation AUC of 0.989, showing the model works well for cancer detection.</li>
-                </ul>
-            </div>
-            <!-- Add more personal projects here if needed -->
-        </div>
-    </section>
+  <!-- GITHUB PROJECTS SECTION -->
+  <section id="projects-github" class="section-padding">
+    <div class="container">
+      <h2><span>Projects on GitHub</span></h2>
+      <ul class="github-projects">
+        <li>
+          <a
+            href="https://github.com/ShayanAlahyari/Advanced-Data-Engineering-forMachine-Learning-in-Genomic-Selection"
+            target="_blank"
+            ><i class="fab fa-github"></i> Advanced Data Engineering for Machine Learning in Genomic Selection</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/ShayanAlahyari/Histopathologic_Cancer_Detection"
+            target="_blank"
+            ><i class="fab fa-github"></i> Histopathologic Cancer Detection</a
+          >
+        </li>
+        <!-- Add more GitHub projects here -->
+      </ul>
+    </div>
+  </section>
 
-    <section id="experience" class="section-padding">
-        <div class="container">
-            <h2>Professional Experience</h2>
-            <div class="experience-item">
-                <h3>Financial Advisor</h3>
-                <p><strong>CURO Financial Technologies Corp</strong> | July 2019 – November 2022 | London, Canada</p>
-                <ul>
-                    <li>Built strong relationships with clients, achieving over 95% satisfaction.</li>
-                    <li>Analyzed and cleaned financial data from various sources to help clients make better financial decisions by 20%.</li>
-                    <li>Created easy-to-use financial guides, which increased client understanding and tool usage by 30%.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Electrical Engineer</h3>
-                <p><strong>Gishay Negar</strong> | June 2016 – July 2018 | Shiraz, Iran</p>
-                <ul>
-                    <li>Designed electronic circuits and systems for over 20 applications, improving system efficiency and performance by 30%.</li>
-                    <li>Increased circuit reliability by 25% and reduced energy use by 20% using simulation tools.</li>
-                    <li>Developed testing protocols and conducted over 100 tests, ensuring 95% compliance with performance standards.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <h2><span>Contact</span></h2>
+      <p>Email: <a href="mailto:salahya@uwo.ca">salahya@uwo.ca</a></p>
+      <p>Phone: <a href="tel:+16478563550">647-856-3550</a></p>
+      <p>Address: Middlesex College, Rm 334, Western University, London</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/shayan-alahyari-775b3b201" target="_blank">Shayan Alahyari</a></p>
+      <p>GitHub: <a href="https://github.com/ShayanAlahyari" target="_blank">ShayanAlahyari</a></p>
+      <a
+        href="https://github.com/ShayanAlahyari/shayan-portfolio/raw/main/Shayan_Alahyari_CV.pdf"
+        download
+        class="download-resume"
+      >
+        Download Resume
+      </a>
+    </div>
+  </section>
 
-    <section id="teaching" class="section-padding">
-        <div class="container">
-            <h2>Teaching Experience</h2>
-            <div class="teaching-item">
-                <h3>Graduate Teaching Assistant</h3>
-                <p><strong>Western University, Faculty of Science</strong> | September 2024 – Present</p>
-                <ul>
-                    <li>Assisted in teaching the course "Coding Essentials: Introduction to Python" (CS 1026).</li>
-                    <li>Supported students one-on-one through email, tutorials, and office hours.</li>
-                    <li>Helped debug Python code and taught core programming concepts to improve students' problem-solving skills.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section-padding">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>C</li>
-                        <li>C++</li>
-                        <li>SQL</li>
-                        <li>Bash Shell</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>Docker</li>
-                        <li>AWS</li>
-                        <li>MySQL</li>
-                        <li>.NET</li>
-                        <li>ASP.NET</li>
-                        <li>Agile</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Libraries</h3>
-                    <ul>
-                        <li>TensorFlow</li>
-                        <li>PyTorch</li>
-                        <li>React</li>
-                        <li>Node.js</li>
-                        <li>Django</li>
-                        <li>Bootstrap</li>
-                        <li>RESTful APIs</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects-github" class="section-padding">
-        <div class="container">
-            <h2>Projects on GitHub</h2>
-            <ul class="github-projects">
-                <li><a href="https://github.com/ShayanAlahyari/Advanced-Data-Engineering-forMachine-Learning-in-Genomic-Selection" target="_blank"><i class="fab fa-github"></i> Advanced Data Engineering for Machine Learning in Genomic Selection</a></li>
-                <li><a href="https://github.com/ShayanAlahyari/Histopathologic_Cancer_Detection" target="_blank"><i class="fab fa-github"></i> Histopathologic Cancer Detection</a></li>
-                <!-- Add more GitHub projects here -->
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact" class="section-padding">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:salahya@uwo.ca">salahya@uwo.ca</a></p>
-            <p>Phone: <a href="tel:+16478563550">647-856-3550</a></p>
-            <p>Address: Middlesex College, Rm 334, Western University, London</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/shayan-alahyari-775b3b201" target="_blank">Shayan Alahyari</a></p>
-            <p>GitHub: <a href="https://github.com/ShayanAlahyari" target="_blank">ShayanAlahyari</a></p>
-            <a href="https://github.com/ShayanAlahyari/shayan-portfolio/raw/main/Shayan_Alahyari_CV.pdf" download class="download-resume">Download Resume</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Shayan Alahyari. All rights reserved.</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Shayan Alahyari. All rights reserved.</p>
+  </footer>
 </body>
 </html>
