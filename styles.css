@@ -1,82 +1,101 @@
-@import "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
-    margin: 0;
-    padding-top: 60px; /* Adjust padding to new header size */
+    scroll-behavior: smooth;
 }
 
-
 header {
-    height: 50px; /* Reduce header height */
     background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     color: white;
-    padding: 5px 0; /* Reduce padding to adjust to the new height */
+    position: fixed;
     width: 100%;
     top: 0;
-    position: fixed;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header nav ul {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo a {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+    gap: 20px;
 }
 
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1em;
     transition: color 0.3s;
+    position: relative;
 }
 
-header nav ul li a:hover {
-    color: #ffeb3b;
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffeb3b;
+    transition: width .3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
 }
 
-.header-content {
-    text-align: center;
-    padding: 5px 0; /* Adjust padding to reduce overall header content height */
-}
-
-.header-content h1 {
-    font-size: 1.8em; /* Smaller font size to fit new header dimensions */
-    margin-bottom: 0; /* Reduce or remove margin to save space */
-}
-
-.header-content p {
-    font-size: 1em; /* Smaller font size to maintain proportionality */
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+nav ul li a:hover::after {
+    width: 100%;
 }
 
 .section-padding {
-    padding: 60px 20px;
+    padding: 80px 20px 60px 20px;
     text-align: center;
-    margin-top: 20px;
 }
 
-section h2 {
-    font-size: 2em;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
+    position: relative;
 }
 
-.project {
+h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #6a11cb;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.project, .education-item, .experience-item, .teaching-item {
     background: white;
     padding: 20px;
     margin: 20px 0;
@@ -85,61 +104,96 @@ section h2 {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project:hover {
-    transform: translateY(-10px);
+.project:hover, .education-item:hover, .experience-item:hover, .teaching-item:hover {
+    transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.project h3 {
-    font-size: 1.5em;
+h3 {
+    font-size: 1.75em;
     margin-bottom: 10px;
     color: #2575fc;
 }
 
-.project p {
+p {
     font-size: 1em;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
-.project a {
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    text-align: left;
+}
+
+a {
     color: #6a11cb;
     text-decoration: none;
-    font-weight: bold;
     transition: color 0.3s;
 }
 
-.project a:hover {
-    color: #ffeb3b;
+a:hover {
+    color: #2575fc;
 }
 
-#resume a {
+.download-resume {
     display: inline-block;
     padding: 10px 20px;
     background: #6a11cb;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 15px;
     transition: background 0.3s;
 }
 
-#resume a:hover {
+.download-resume:hover {
     background: #2575fc;
 }
 
-#contact p {
-    font-size: 1em;
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-category {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px;
+    max-width: 300px;
+}
+
+.skill-category h3 {
+    color: #2575fc;
     margin-bottom: 10px;
 }
 
-#contact a {
+.github-projects {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.github-projects li a {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.github-projects li a i {
+    margin-right: 10px;
     color: #6a11cb;
-    text-decoration: none;
-    font-weight: bold;
     transition: color 0.3s;
 }
 
-#contact a:hover {
-    color: #ffeb3b;
+.github-projects li a:hover i {
+    color: #2575fc;
 }
 
 footer {
@@ -151,23 +205,27 @@ footer {
 }
 
 @media (min-width: 768px) {
-    .header-content h1 {
+    .section-padding {
+        padding: 100px 40px 80px 40px;
+    }
+
+    h2 {
         font-size: 3em;
     }
 
-    .header-content p {
-        font-size: 1.5em;
+    h3 {
+        font-size: 2em;
     }
 
-    section h2 {
-        font-size: 2.5em;
-    }
-
-    .project h3 {
-        font-size: 1.75em;
-    }
-
-    .project p {
+    p, ul {
         font-size: 1.1em;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+    }
+
+    .skills-container {
+        gap: 30px;
     }
 }
